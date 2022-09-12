@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:aliceblue;
+}
+
+.search-bar {
+    display: flex;
+    background-color: aliceblue;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4), -6px -6px 8px rgba(255, 255, 255, 0.7);
+    position: relative;
+    transition: 1.5s;
+}
+.magnifier {
+    width: 25px;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+
+.mic {
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    transition: 0.5s;
+    transition-delay: 0.9s;
+}
+
+.input {
+    margin: 10px 50px;
+    width: 100%; 
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+.active.search-bar {
+    width: 50px;
+}
+
+.active .mic {
+    width: 0;
+}
